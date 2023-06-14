@@ -22,7 +22,7 @@ const BlogPostTable: React.FC = () =>{
                 <tbody>
                     {!selectedPost ? currentItems.map((post: BlogPost) => (
                         <tr key={post.id} >
-                            <td className="bg-white border border-slate-300 px-4 py-2" onClick = {() => handlePostClick(post.id)}>{post.id}</td>
+                            <td className="bg-white border border-slate-300 px-4 py-2 hover:bg-blue-200 cursor-pointer" onClick = {() => handlePostClick(post.id)}>{post.id}</td>
                             <td className="bg-white border border-slate-300 px-4 py-2">{post.title}</td>
                             <td className="bg-white border border-slate-300 px-4 py-2">{post.body}</td>
                         </tr>
